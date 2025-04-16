@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <h2 class="mb-3">Liste des artisans</h2>
+
+  <!-- Liste des artisans -->
+  <div class="row">
+    <div class="col-md-6 col-lg-4 mb-3" *ngFor="let artisan of filteredArtisans">
+      <div class="card h-100">
+        <div class="card-body" [routerLink]="['/artisans', artisan.id]">
+          <img [src]="artisan.image" alt="{{ artisan.name }}">
+          <h5 class="card-title">{{ artisan.name }}</h5>
+          <p class="card-text"><strong>Spécialité:</strong> {{ artisan.specialty }}</p>
+          <p class="card-text"><strong>Ville:</strong> {{ artisan.location }}</p>
+          <p class="card-text"><strong>Note:</strong> {{ artisan.note }}</p>
+          <p class="card-text"><strong>Catégorie:</strong> {{ artisan.category }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

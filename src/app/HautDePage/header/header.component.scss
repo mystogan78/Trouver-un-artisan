@@ -1,0 +1,52 @@
+
+// utilisation des variables
+$color-primary: #f1f8fc;
+$color-strong: #cd2c2e;
+$color-text: #0074c7;
+$color-button: #384050;
+
+$font-bold: 'Graphik-Bold-trial.otf';
+$font-regular: 'Graphik-Regular-trial.otf';
+
+
+
+// @font-face pour les polices
+@font-face {
+  font-family: $font-bold;
+  src: url('/src/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+}
+@font-face {
+  font-family: $font-regular;
+  src: url('/src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+}
+
+
+
+nav{
+    background-color: $color-primary;
+}
+h1{
+  font-family: $font-bold;
+
+  color:$color-text;
+}
+.nav-link{
+  font-family: $font-regular;
+  color: $color-text;
+}
+.nav-link:hover{
+  color: $color-strong;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+  button{
+    background-color: $color-button;
+    color: $color-primary;
+  }
+  button{
+    font-family: $font-regular;
+  }

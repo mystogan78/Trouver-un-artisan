@@ -1,0 +1,33 @@
+<div class="container mt-4" *ngIf="artisan"> 
+    <h2>{{ artisan.name }}</h2>
+    <p><strong>Spécialité :</strong> {{ artisan.specialty }}</p> 
+    <p><strong>Catégorie :</strong> {{ artisan.category }}</p>
+    <p><strong>Ville :</strong> {{ artisan.location }}</p>
+    <p><strong>Note :</strong> {{ artisan.note }}</p>
+    <p><strong>Description :</strong> {{ artisan.about }}</p>
+    <p><strong>Mail :</strong> {{ artisan.email }}</p>
+    <p><strong>site :</strong> {{ artisan.website }}</p>
+    <a [routerLink]="['/']" class ="btn">Retour à l'accueil</a>
+    
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+      <label for="subject">Sujet:</label>
+      <input type="text" id="subject" name="subject" [(ngModel)]="formData.subject" required>
+    
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" [(ngModel)]="formData.message" required></textarea>
+    
+      <button type="submit">Envoyer</button>
+    </form>
+    <p *ngIf="messageEnvoye" class="alert {{ messageClass }}" style="margin-top: 10px;">
+      {{ messageEnvoye }}
+    </p>
+    
+
+  </div>
+  

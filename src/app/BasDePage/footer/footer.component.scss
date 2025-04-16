@@ -1,0 +1,84 @@
+$color-primary: #f1f8fc;
+$color-strong: #cd2c2e;
+$color-text: #0074c7;
+
+$font-regular: 'Graphik-Regular-trial.otf';
+
+
+
+
+
+@font-face {
+    font-family: $font-regular;
+    src: url('/src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  }
+  
+
+
+nav {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between; /* Répartit les éléments */
+    align-items: center;
+    padding: 20px; /* Ajoute de l'espace autour du footer */
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between; /* Écarte les blocs */
+    align-items: center;
+    width: 100%;
+}
+
+.footer-text {
+    color: $color-text;
+    text-align: left;
+    flex: 1; /* Prend un tiers de l'espace */
+}
+p:hover {
+    color: $color-strong;
+}
+
+
+.social-média {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex: 1; /* Prend un tiers de l'espace */
+}
+
+.footer-coordinates {
+    font-family: $font-regular;
+    color: $color-text;
+    text-align: right;
+    flex: 1; /* Prend un tiers de l'espace */
+}
+a{
+    color: $color-text;
+}
+a:hover{
+    color: $color-strong;
+}
+
+.social-média a {
+    font-size: 24px;
+    color: $color-text;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-média a:hover {
+    color: $color-strong;
+}
+
+p {
+    font-family: $font-regular;
+    margin: 5px 0;
+}

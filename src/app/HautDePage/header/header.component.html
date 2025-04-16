@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="assets/images/Logo.png"[routerLink]="['/']" alt="Logo" height="50">
+      <h1 class="navbar-brand">{{ title }}</h1>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/batiment" routerLinkActive="active">Bâtiment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/fabrication" routerLinkActive="active">Fabrication</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/alimentation" routerLinkActive="active">Alimentation</a>
+          </li>
+        </ul>
+  
+        <!-- Formulaire de recherche déplacé ici -->
+        <form (ngSubmit)="onSearch()" class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Rechercher un artisan"
+            [(ngModel)]="searchTerm"
+            name="search"
+          />
+          <button class="btn btn-outline-success" type="submit">Rechercher</button>
+        </form>
+        
+        
+      </div>
+    </div>
+  </nav>
+  

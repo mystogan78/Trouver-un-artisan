@@ -1,0 +1,18 @@
+<div class="container mt-4">
+    <h2 class="text-center">{{title}}</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-3" *ngFor="let artisan of artisans | categoryFilter:'Services'">
+        <div class="card">
+          <div class="card-body" [routerLink]="['/artisans', artisan.id]">
+            <img [src]="artisan.image" alt="{{ artisan.name }}">
+            <h5 class="card-title">{{ artisan.name }}</h5>
+            <p><strong>Note:</strong> {{ artisan.note }}</p>
+            <p><strong>Spécialité:</strong> {{ artisan.specialty }}</p>
+            <p><strong>Ville:</strong> {{ artisan.location }}</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

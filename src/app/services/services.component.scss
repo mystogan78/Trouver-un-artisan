@@ -1,0 +1,45 @@
+// Définition des variables
+$font-bold: 'Graphik-Bold-trial.otf';
+$font-regular: 'Graphik-Regular-trial.otf';
+
+$color-primary: #0074c7;
+$color-secondary: #82b864;
+$color-strong: #cd2c2e;
+$color-text: #384050;
+$color-light: #f1f8fc;
+
+// Définition des @font-face
+@font-face {
+  font-family: $font-bold;
+  src: url('/src/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+}
+
+@font-face {
+  font-family: $font-regular;
+  src: url('/src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+}
+
+// Styles des titres h2 et h5
+h2 {
+  font-family: $font-bold, sans-serif;
+  background-color: $color-primary;
+  color: $color-light;
+  margin: 0;
+}
+
+h5 {
+  font-family: $font-bold, sans-serif;
+  background-color: $color-secondary;
+  color: $color-text;
+  margin: 0;
+}
+
+strong {
+  font-family: $font-regular, sans-serif;
+  color: $color-strong;
+}
+
+p {
+  font-family: $font-regular, sans-serif;
+  color: $color-text;
+}

@@ -1,0 +1,74 @@
+// Définition des variables pour les couleurs
+$color-primary: #00497c;
+$color-strong: #cd2c2e;
+$color-text: #384050;
+$color-success: #e0f7e0;
+$color-error: #f7e0e0;
+$color-warning: #fff3e0;
+$color-green: green;
+$color-red: red;
+$color-orange: orange;
+
+// Définition des polices
+$font-bold: 'Graphik-Bold-trial.otf';
+$font-regular: 'Graphik-Regular-trial.otf';
+
+// @font-face pour les polices
+@font-face {
+  font-family: $font-bold;
+  src: url('/src/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+}
+
+@font-face {
+  font-family: $font-regular;
+  src: url('/src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+}
+
+// Styles globaux pour les éléments de texte
+h2 {
+  font-family: $font-bold, sans-serif;
+  color: $color-primary;
+  margin: 0;
+}
+
+strong {
+  font-family: $font-regular, sans-serif;
+  color: $color-strong;
+}
+
+p {
+  font-family: $font-regular, sans-serif;
+  color: $color-text;
+}
+
+// Style du formulaire
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+// Styles pour les messages d'état
+.message-success, .message-error, .message-warning {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.message-success {
+  color: $color-green;
+  background-color: $color-success;
+  border: 1px solid $color-green;
+}
+
+.message-error {
+  color: $color-red;
+  background-color: $color-error;
+  border: 1px solid $color-red;
+}
+
+.message-warning {
+  color: $color-orange;
+  background-color: $color-warning;
+  border: 1px solid $color-orange;
+}

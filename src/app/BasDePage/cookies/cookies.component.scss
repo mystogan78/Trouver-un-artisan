@@ -1,0 +1,19 @@
+$color-primary: #0074c7;
+$color-text: #f1f8fc;
+
+$font-bold :'Graphik-Bold-trial.otf';
+
+@font-face {
+    font-family: $font-bold;
+    src: url('/src/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+  }
+  
+
+h2{
+    font-family: $font-bold;
+    
+    background-color: $color-primary;
+    color: $color-text;
+    margin: 0px;
+
+}
