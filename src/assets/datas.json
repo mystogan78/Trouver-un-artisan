@@ -9,7 +9,7 @@
 		"email":"v.bellemare@gmail.com",
 		"website":"https://plomberie-bellemare.com",
 		"category":"Bâtiment",
-		"image":"assets/images/Batiment.png",
+		"image":"/assets/images/Batiment.png",
 		"top": false
 	},
 	{
@@ -22,7 +22,7 @@
 		"email":"a.amitee@hotmail.com",
 		"website":"https://lecuyer-couture.com",
 		"category":"Fabrication",
-		"image":"assets/images/couturière.png",
+		"image":"/assets/images/couturière.png",
 		"top": false
 	},
 	{
@@ -35,7 +35,7 @@
 		"email":"l.dennos@hotmail.fr",
 		"website":"https://coiffure-leala-chambery.fr",
 		"category":"Services",
-		"image": "assets/images/coiffeur.png",
+		"image": "/assets/images/coiffeur.png",
 		"top": false
 	},
 	{
@@ -48,7 +48,7 @@
 		"email":"chocolaterie-labbe@gmail.com",
 		"website":"https://chocolaterie-labbe.fr",
 		"category":"Alimentation",
-		"image":"assets/images/chocolatier.png",
+		"image":"/assets/images/chocolatier.png",
 		"top": true
 	},
 	{
@@ -61,7 +61,7 @@
 		"email":"claude.quinn@gmail.com",
 		"website":"",
 		"category":"Fabrication",
-		"image":"assets/images/Bijoutier-.png",
+		"image":"/assets/images/Bijoutier-.png",
 		"top": false
 	},
 	{
@@ -74,7 +74,7 @@
 		"email":"v-laredoute@gmail.com",
 		"website":"",
 		"category":"Services",
-		"image":"assets/images/Toiletteur.png",
+		"image":"/assets/images/Toiletteur.png",
 		"top": false
 	},
 	{
@@ -87,7 +87,7 @@
 		"email":"boutot-menuiserie@gmail.com",
 		"website":"https://boutot-menuiserie.com",
 		"category":"Bâtiment",
-		"image":"assets/images/Batiment.png",
+		"image":"/assets/images/Batiment.png",
 		"top": false
 	},
 	{
@@ -100,7 +100,7 @@
 		"email":"contact@cm-graphisme.com",
 		"website":"https://cm-graphisme.com",
 		"category":"Services",
-		"image":"assets/images/Webdesigner.png",
+		"image":"/assets/images/Webdesigner.png",
 		"top": false
 	},
 	{
@@ -113,7 +113,7 @@
 		"email":"o-salmons@live.com",
 		"website":"",
 		"category":"Bâtiment",
-		"image":"assets/images/Batiment.png",
+		"image":"/assets/images/Batiment.png",
 		"top": true
 	},
 	{
@@ -126,7 +126,7 @@
 		"email":"aupainchaud@hotmail.com",
 		"website":"",
 		"category":"Alimentation",
-		"image":"assets/images/Boulanger.png",
+		"image":"/assets/images/Boulanger.png",
 		"top": true
 	},
 	{
@@ -139,7 +139,7 @@
 		"email":"boucherie.dumond@gmail.com",
 		"website":"",
 		"category":"Alimentation",
-		"image":"assets/images/Boucher.png",
+		"image":"/assets/images/Boucher.png",
 		"top": false
 	},
 	{
@@ -152,7 +152,7 @@
 		"email":"contact@mont-blanc-electricite.com",
 		"website":"https://mont-blanc-electricite.com",
 		"category":"Bâtiment",
-		"image":"assets/images/Batiment.png",
+		"image":"/assets/images/Batiment.png",
 		"top": false
 	},
 	{
@@ -165,7 +165,7 @@
 		"email":"contact@truchon-traiteur.fr",
 		"website":"https://truchon-traiteur.fr",
 		"category":"Bâtiment",
-		"image":"assets/images/Batiment.png",
+		"image":"/assets/images/Batiment.png",
 		"top": false
 	},
 	{
@@ -178,7 +178,7 @@
 		"email":"contact@le-monde-des-fleurs-annonay.fr",
 		"website":"https://le-monde-des-fleurs-annonay.fr",
 		"category":"Services",
-		"image":"assets/images/Fleuriste.png",
+		"image":"/assets/images/Fleuriste.png",
 		"top": false
 	},
 	{
@@ -191,7 +191,7 @@
 		"email":"r.charbonneau@gmail.com",
 		"website":"",
 		"category":"Services",
-		"image": "assets/images/Carrossier.png",
+		"image": "/assets/images/Carrossier.png",
 		"top": false
 	},
 	{
@@ -204,7 +204,7 @@
 		"email":"e-carigan@hotmail.com",
 		"website":"",
 		"category":"Fabrication",
-		"image":"assets/images/Ferronnier.png",
+		"image":"/assets/images/Ferronnier.png",
 		"top": false
 	},
 	{
@@ -217,7 +217,7 @@
 		"email":"sup-hair@gmail.com",
 		"website":"https://sup-hair.fr",
 		"category":"Services",
-		"image": "assets/images/coiffeur.png",
+		"image": "/assets/images/coiffeur.png",
 		"top": false
 	}
 ]

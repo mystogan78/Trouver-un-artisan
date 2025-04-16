@@ -1,20 +1,32 @@
-
+import { Component, AfterViewInit } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+declare var bootstrap: any;
 
-import { Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink,CommonModule,RouterLinkActive,RouterModule,FormsModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive, FormsModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-  title ="Trouve ton artisan"
+export class HeaderComponent implements AfterViewInit { ngAfterViewInit() {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navbarCollapse?.classList.contains('show')) {
+        (navbarCollapse as HTMLElement).classList.remove('show');
+      }
+    });
+  });
+}
+  title = 'Trouve ton artisan';
   searchTerm: string = '';
 
   constructor(private router: Router) {}
@@ -25,4 +37,5 @@ export class HeaderComponent {
       this.router.navigate(['/artisans'], { queryParams: { search: this.searchTerm } });
     }
   }
+
 }

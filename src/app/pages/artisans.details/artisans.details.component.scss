@@ -16,12 +16,12 @@ $font-regular: 'Graphik-Regular-trial.otf';
 // @font-face pour les polices
 @font-face {
   font-family: $font-bold;
-  src: url('/src/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+  src: url('/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
 }
 
 @font-face {
   font-family: $font-regular;
-  src: url('/src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  src: url('/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
 }
 
 // Styles globaux pour les éléments de texte

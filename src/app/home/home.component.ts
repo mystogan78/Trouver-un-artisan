@@ -11,7 +11,14 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  title = 'Nos artisans du mois';
+  title ='Comment choisir un artisan ?';
+  steps: Array<{ title: string, text: string }> = [
+    { title: '1. Choisir la catégorie d\'artisanat', text: 'Sélectionnez une catégorie d artisanat parmi nos options disponibles au niveau du menu . Vous pourrez ensuite voir une liste d\'artisans spécialisés dans cette catégorie. ' },
+    { title: '2. Choisir un artisan', text: 'Parcourez la liste des artisans disponibles dans la catégorieque vous avez choisie. ' },
+    { title: '3. Le contacter via le formulaire', text: 'Une fois que vous avez choisi votre artisan, contactez-le directement via le formulaire de contact sur sa page. Il recevra votre message.' },
+    { title: '4. Réponse sous 48h', text: 'Vous recevrez une réponse sous 48 heures. L\'artisan prendra contact avec vous pour discuter de votre demande. ' }
+  ];
+  titleArtisansDuMois = 'Voici nos 3 artisans du mois';
   artisansDuMois: any[] = [];
 
   ngOnInit(): void {

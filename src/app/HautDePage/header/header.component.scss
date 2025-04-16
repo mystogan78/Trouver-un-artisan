@@ -13,11 +13,11 @@ $font-regular: 'Graphik-Regular-trial.otf';
 // @font-face pour les polices
 @font-face {
   font-family: $font-bold;
-  src: url('/src/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+  src: url('/assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
 }
 @font-face {
   font-family: $font-regular;
-  src: url('/src/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  src: url('/assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
 }
 
 
@@ -50,3 +50,17 @@ img {
   button{
     font-family: $font-regular;
   }
+  /* Ajuster le comportement du menu burger pour l'affichage mobile */
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: black; /* Couleur de l'icône du menu burger */
+}

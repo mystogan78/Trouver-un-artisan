@@ -1,62 +1,66 @@
 <nav class="navbar navbar-expand-lg">
-   
-    <div class="container-fluid">
+  <div class="container-fluid">
+    <div class="icon-container">
 
-<div class="icon-container">
-    <div class="footer-text">
-    <p class="Mentions"[routerLink]="['/mentions-Légales']"  >{{lien1}}</p>
-    <p class="donnees" [routerLink]="['/donnees-personnelles']">{{lien2}}</p>
-    <p class="accessibilité" [routerLink]="['/accessibilite']">{{lien3}}</p>
-    <p class="cookies" [routerLink]="['/cookies']">{{lien4}}</p>
+      <!-- Liens légaux -->
+      <div class="footer-text">
+        <a class="Mentions" [routerLink]="['/mentions-Légales']">{{ lien1 }}</a>
+        <a class="donnees" [routerLink]="['/donnees-personnelles']">{{ lien2 }}</a>
+        <a class="accessibilité" [routerLink]="['/accessibilite']">{{ lien3 }}</a>
+        <a class="cookies" [routerLink]="['/cookies']">{{ lien4 }}</a>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <ul class="social-média">
+        <li>
+          <a href="http://www.facebook.com" target="_blank" title="Facebook" rel="noopener noreferrer">
+            <fa-icon [icon]="faFacebook" aria-hidden="true"></fa-icon>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/Accueil" target="_blank" title="X (ancien Twitter)" rel="noopener noreferrer">
+            <fa-icon [icon]="faTwitter" aria-hidden="true"></fa-icon>
+            <span class="visually-hidden">X (ancien Twitter)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank" title="Instagram" rel="noopener noreferrer">
+            <fa-icon [icon]="faInstagram" aria-hidden="true"></fa-icon>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" title="LinkedIn" rel="noopener noreferrer">
+            <fa-icon [icon]="faLinkedin" aria-hidden="true"></fa-icon>
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com" target="_blank" title="GitHub" rel="noopener noreferrer">
+            <fa-icon [icon]="faGithub" aria-hidden="true"></fa-icon>
+            <span class="visually-hidden">GitHub</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Coordonnées -->
+      <div class="footer-coordinates">
+        <p>
+          <a
+            href="https://www.google.fr/maps/place/H%C3%B4tel+de+R%C3%A9gion+-+R%C3%A9gion+Auvergne-Rh%C3%B4ne-Alpes/@45.7406606,4.8169138,17z"
+            target="_blank"
+            rel="noopener noreferrer">
+            {{ adresse }}
+          </a>
+        </p>
+        <p>{{ teL }}</p>
+      </div>
 
     </div>
-  
+  </div>
+</nav>
 
-<ul class="social-média">
-        <li>
-            <a href="http://www.facebook.com" target="_blank">
-                <fa-icon [icon]="faFacebook"></fa-icon>
-            </a>
-        </li>
-        <li>
-            <a href="https://x.com/Accueil" target="_blank">
-                <fa-icon [icon]="faTwitter"></fa-icon>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com" target="_blank">
-                <fa-icon [icon]="faLinkedin"></fa-icon>
-            </a>
-        </li>
-        <li>
-            <a href ="https://www.github.com" target="_blank">
-                <fa-icon [icon]="faGithub"></fa-icon>
-            </a>
-        </li>
-
-
-
-
-    </ul>
-<div class="footer-coordinates">
-    <p><a href="https://www.google.fr/maps/place/H%C3%B4tel+de+R%C3%A9gion+-+R%C3%A9gion+Auvergne-Rh%C3%B4ne-Alpes/@45.7406606,4.8169138,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ecfb42ffac87:0xafa288732ed9370c!8m2!3d45.7406606!4d4.8194887!16s%2Fg%2F1tdq5bzj?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">
-        {{adresse}}
-    </a>
-    </p>
-    <p>{{teL}}</p>
-
-</div>
-</div>
-
-
-    </div>
     
 
 
-
-</nav>
