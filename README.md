@@ -120,7 +120,7 @@ Le site est conforme aux normes HTML5 selon le validateur officiel :
 
 ---
 
-### 🧱 Exemple de fiche artisan (catégorie Bâtiment)
+### 🧱 Exemple de fiche artisan détaillé
 
 ![Fiche artisan détails mobile](screenshots/Artisan-details-mobile.png)
 ![Fiche artisan détails dekstop](screenshots/Artisan-details-dekstop.png)
