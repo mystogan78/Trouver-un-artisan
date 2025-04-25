@@ -13,4 +13,6 @@ import { RouterLink } from '@angular/router';
 export class AlimentationComponent {
 title ="Alimentation"
 artisans = artisansData;
+
+
 }

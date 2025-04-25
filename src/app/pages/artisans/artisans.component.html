@@ -10,7 +10,16 @@
           <h5 class="card-title">{{ artisan.name }}</h5>
           <p class="card-text"><strong>Spécialité:</strong> {{ artisan.specialty }}</p>
           <p class="card-text"><strong>Ville:</strong> {{ artisan.location }}</p>
-          <p class="card-text"><strong>Note:</strong> {{ artisan.note }}</p>
+          <p class="card-text">
+            <strong>Note:</strong> 
+            {{ artisan.note }} / 5
+            <span class="star-rating ms-2">
+              <span *ngFor="let star of getStars(+artisan.note)">
+                <i class="star" [class.filled]="star === 1">★</i>
+              </span>
+            </span>
+          </p>
+          
           <p class="card-text"><strong>Catégorie:</strong> {{ artisan.category }}</p>
         </div>
       </div>

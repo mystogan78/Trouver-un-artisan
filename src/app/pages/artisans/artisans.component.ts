@@ -48,4 +48,8 @@ export class ArtisansComponent implements OnInit {
   onSearch(): void {
     this.filterArtisans();
   }
+  getStars(note: number): number[] {
+    return Array(5).fill(0).map((_, i) => i < note ? 1 : 0);
+  }
+  
 }

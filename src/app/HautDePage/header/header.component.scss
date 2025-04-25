@@ -50,11 +50,7 @@ img {
   button{
     font-family: $font-regular;
   }
-  /* Ajuster le comportement du menu burger pour l'affichage mobile */
-.navbar-collapse {
-  display: flex;
-  justify-content: flex-start;
-}
+
 
 .navbar-toggler {
   border: none;

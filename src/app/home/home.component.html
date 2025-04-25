@@ -1,14 +1,17 @@
 <div class="container">
     <h2 class="text-center">{{ title }}</h2>
     <div class="row">
+      <!--Menu accordéon-->
       <div *ngFor="let step of steps; let i = index" class="accordion-item">
         <h2 class="accordion-header" [id]="'step' + (i + 1) + 'Heading'">
+          <!--Titre-->
           <button class="accordion-button" type="button" [attr.data-bs-toggle]="'collapse'"
                   [attr.data-bs-target]="'#step' + (i + 1) + 'Content'" [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
                   [attr.aria-controls]="'step' + (i + 1) + 'Content'">
             {{ step.title }}
           </button>
         </h2>
+        <!--Contenu de l'accordéon-->
         <div [id]="'step' + (i + 1) + 'Content'" class="accordion-collapse collapse"
              [attr.aria-labelledby]="'step' + (i + 1) + 'Heading'" data-bs-parent="#artisanSteps">
           <div class="accordion-body">
@@ -21,6 +24,7 @@
     <div class="row mt-4">
       <h3 class="text-center">{{titleArtisansDuMois}}</h3>
 
+      <!--Carte Artisans du mois-->
       <div class="col-md-4" *ngFor="let artisan of artisansDuMois">
         <div class="card mb-3 shadow-sm">
           <div class="card-body" [routerLink]="['/artisans', artisan.id]">

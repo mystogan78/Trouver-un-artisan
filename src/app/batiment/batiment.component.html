@@ -1,7 +1,10 @@
 <div class="container mt-4">
     <h2 class="text-center">{{title}}</h2>
     <div class="row">
+       <!-- Filtre la catégorie des artisans -->
+
       <div class="col-md-6 col-lg-4 mb-3" *ngFor="let artisan of artisans | categoryFilter:'Bâtiment'">
+         <!--Card pour chaque artisan -->
         <div class="card">
           <div class="card-body" [routerLink]="['/artisans', artisan.id]">
             <img [src]="artisan.image" alt="{{ artisan.name }}">

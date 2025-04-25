@@ -1,4 +1,5 @@
 <div class="container mt-4" *ngIf="artisan"> 
+  <!--Affichage des détails de l'artisan-->
     <h2>{{ artisan.name }}</h2>
     <p><strong>Spécialité :</strong> {{ artisan.specialty }}</p> 
     <p><strong>Catégorie :</strong> {{ artisan.category }}</p>
@@ -7,8 +8,11 @@
     <p><strong>Description :</strong> {{ artisan.about }}</p>
     <p><strong>Mail :</strong> {{ artisan.email }}</p>
     <p><strong>site :</strong> {{ artisan.website }}</p>
-    <a [routerLink]="['/']" class ="btn">Retour à l'accueil</a>
     
+    <button [routerLink]="['/']" >Retour à l'accueil</button>
+
+
+    <!--Formulaire de contact-->
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <label for="subject">Sujet:</label>
       <input type="text" id="subject" name="subject" [(ngModel)]="formData.subject" required>

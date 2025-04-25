@@ -1,60 +1,139 @@
-# TrouveTonArtisan
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+# TrouveTonArtisan 🛠️
 
-## Development server
+**TrouveTonArtisan** est une plateforme web développée en Angular permettant aux particuliers de trouver et contacter des artisans qualifiés dans la région **Auvergne-Rhône-Alpes**.
 
-To start a local development server, run:
+---
+
+## 📌 Objectifs
+
+- 🎯 Aider les utilisateurs à localiser et contacter des artisans proches de chez eux.
+- 🧭 Fournir une interface intuitive et responsive.
+- ♿ Respecter les normes **WCAG 2.1** pour garantir l'accessibilité à tous.
+- 🔌 Préparer l’intégration d’une API dans le futur.
+
+---
+
+## 🔧 Technologies utilisées
+
+- Angular 19
+- TypeScript
+- HTML5 / Sass
+- Bootstrap 5
+- Figma (maquettes)
+- JSON (données simulées)
+- Git / GitHub
+
+---
+
+## 🧩 Schéma du projet
+
+### 🔹 Création des routes
+
+Des routes principales sont accessibles via le **header** :
+
+- 🏗️ `/batiment` → Bâtiment  
+- 🧰 `/services` → Services  
+- 🪵 `/fabrication` → Fabrication  
+- 🍞 `/alimentation` → Alimentation  
+
+Et des routes secondaires visibles dans le **footer** :
+
+- 📄 `/mentions-legales`  
+- 🔐 `/donnees-personnelles`  
+- ♿ `/accessibilite`  
+- 🍪 `/cookie`
+
+---
+
+## 📁 Contenu du fichier `datas.json` et son utilité
+
+Ce fichier contient tous les artisans avec leurs informations :  
+- 🆔 `id`, 👤 `name`, 🛠️ `specialty`, 📍 `location`, ⭐ `note`, 📝 `description`
+
+Utilisé pour :
+- L’affichage dynamique des artisans
+- Le filtrage par recherche
+- L’accès à la fiche de chaque artisan
+
+---
+
+## 🚀 Lancer le projet en local
+
+### 🛠️ Prérequis
+
+- Node.js ≥ 18  
+- Angular CLI ≥ 19.2.1
+
+### 🔄 Étapes
 
 ```bash
+git clone https://github.com/tonpseudo/TrouveTonArtisan.git
+cd TrouveTonArtisan
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+> 💡 Une fois installé, le projet est accessible sur :  
+> http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔐 Sécurité (fichier `.htaccess`)
 
-```bash
-ng generate component component-name
-```
+Le fichier `.htaccess` permet :
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- 🔁 La redirection automatique des routes Angular vers `index.html`
+- 🔒 L'ajout de headers de sécurité :
+  - X-Content-Type-Options
+  - X-Frame-Options
+  - Content-Security-Policy
+  - Referrer-Policy
+  - HSTS
+  - Permissions-Policy
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## ✅ Validation W3C
 
-To build the project run:
+Le site est conforme aux normes HTML5 selon le validateur officiel :  
+🔗 [validator.w3.org](https://validator.w3.org)
 
-```bash
-ng build
-```
+> 📸 Capture d'écran disponible dans le dossier de rendu
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🔗 Liens utiles
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- 🌐 Démo en ligne : [https://konte.alwaysdata.net](https://konte.alwaysdata.net)
+- 💻 Dépôt GitHub : [https://github.com/mystogan78/Trouver-un-artisan.git](https://github.com/mystogan78/Trouver-un-artisan.git)
+- 🎨 Maquette Figma : [Voir la maquette](https://www.figma.com/design/yjAKTJOcXKVwqREARwBSoC/trouve-ton--artisan?node-id=12-109)
+---
 
-```bash
-ng test
-```
+## 📸 Aperçu du projet
 
-## Running end-to-end tests
+### 🏠 Page d'accueil
 
-For end-to-end (e2e) testing, run:
+![Accueil mobile](screenshots/Accueil-mobile.png)
+![Accueil dekstop](screenshots/Accueil-desktop.png)
+![Accueil tablet](screenshots/Accueil-tablet.png)
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 🧱 Exemple de fiche artisan (catégorie Bâtiment)
 
-## Additional Resources
+![Fiche artisan détails mobile](screenshots/Artisan-details-mobile.png)
+![Fiche artisan détails dekstop](screenshots/Artisan-details-dekstop.png)
+![Fiche artisan détails tablet](screenshots/Artisan-details-tablet.png)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# Trouver-un-artisan
+---
+
+### 🔍 Résultat de recherche
+
+![Résultat de recherche mobile](screenshots/Artisan-recherche-mobile.png)
+![Résultat de recherche dekstop](screenshots/Artisan-recherche-dekstop.png)
+![Résultat de recherche tablet](screenshots/Artisan-recherche-tablet.png)
+
+---
+
+
